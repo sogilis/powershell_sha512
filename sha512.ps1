@@ -1,10 +1,8 @@
-$Folder = $Args[0]
+$File = $Args[0]
 $NbIter = $Args[1]
-$FoundFile = Get-ChildItem -Path $Folder | Select-Object -First 1
-$File = "$Folder\$FoundFile"
 $Output = "c:\data\output"
 
-Write-Output "Parameters $Folder, $File, $NbIter, $Output"
+Write-Output "Parameters $File, $NbIter, $Output"
 New-Item -ItemType directory -Force -Path $Output
 
 Write-Output "Computing SHA512"
