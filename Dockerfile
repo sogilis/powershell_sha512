@@ -1,4 +1,4 @@
-FROM microsoft/windowsservercore
+FROM mcr.microsoft.com/windows/nanoserver
 
 COPY sha512.ps1 .
 
